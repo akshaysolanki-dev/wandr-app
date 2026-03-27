@@ -1,0 +1,119 @@
+/* 🌍 GLOBAL RESET (must have) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 🌐 ROOT SYSTEM */
+html {
+  font-size: clamp(14px, 1.5vw, 18px);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  /* line-height: 1.5; */
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+/* 🎯 DESIGN TOKENS */
+:root {
+
+  /* Colors */
+  --color-bg: #0e0e1a;           /* Deep dark blue-black background */
+  --color-surface: #16162a;      /* Slightly lighter surface for cards */
+  --color-surface-2: #1e1e36;    /* Even lighter for hover states */
+  --color-border: rgba(255,255,255,0.07); /* Very subtle borders */
+  --color-accent: #f0a500;       /* Golden amber — our main accent */
+  --color-accent-2: #e05c5c;     /* Soft red — for favorites */
+  --color-text-primary: #f0ede6; /* Warm white for main text */
+  --color-text-secondary: #9e9bb5; /* Muted purple-grey for secondary text */
+  --color-success: #4caf88;      /* Green for success messages */
+
+  /* 🔤 TYPOGRAPHY (FLUID) */
+  --fs-xs: clamp(0.75rem, 1vw, 0.875rem);
+  --fs-sm: clamp(0.875rem, 1.2vw, 1rem);
+  --fs-md: clamp(1rem, 1.5vw, 1.125rem);
+  --fs-lg: clamp(1.25rem, 2vw, 1.5rem);
+  --fs-xl: clamp(1.75rem, 3vw, 2.25rem);
+  --fs-2xl: clamp(2.25rem, 4vw, 3rem);
+  --fs-3xl: clamp(3rem, 5vw, 4rem);
+
+  /* 📏 SPACING SYSTEM */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 5rem;
+  /* 📐 LAYOUT */
+  --container-max: 1200px;
+  --container-padding: clamp(1rem, 3vw, 2rem);
+
+  /* 🔲 RADIUS */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 30px;
+
+  /* 🌫 SHADOWS */
+  --shadow-sm: 0 2px 6px rgba(0,0,0,0.08);
+  --shadow-md: 0 6px 16px rgba(0,0,0,0.12);
+  --shadow-lg: 0 12px 30px rgba(0,0,0,0.18);
+
+
+  /* ⚡ TRANSITIONS */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+
+
+  /* Font family */
+  --font-display: 'Playfair Display', serif;   /* Elegant headings */
+  --font-body: 'DM Sans', sans-serif;          /* Clean body text */
+}
+
+/* 📦 CONTAINER */
+/* .container {
+  width: 100%;
+  max-width: var(--container-max);
+  padding-inline: var(--container-padding);
+  margin-inline: auto;
+} */
+
+/* 🔧 UTILITY CLASSES (optional but powerful) */
+/* .flex {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.section {
+  padding-block: var(--space-2xl);
+} */
