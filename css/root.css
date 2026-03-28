@@ -25,12 +25,15 @@ select {
 
 /* 🌐 ROOT SYSTEM */
 html {
-  font-size: clamp(14px, 1.5vw, 18px);
+  font-size: clamp(15px, 1.5vw, 18px);
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
   /* line-height: 1.5; */
   color: var(--color-text);
   background: var(--color-bg);
@@ -38,17 +41,16 @@ body {
 
 /* 🎯 DESIGN TOKENS */
 :root {
-
   /* Colors */
-  --color-bg: #0e0e1a;           /* Deep dark blue-black background */
-  --color-surface: #16162a;      /* Slightly lighter surface for cards */
-  --color-surface-2: #1e1e36;    /* Even lighter for hover states */
-  --color-border: rgba(255,255,255,0.07); /* Very subtle borders */
-  --color-accent: #f0a500;       /* Golden amber — our main accent */
-  --color-accent-2: #e05c5c;     /* Soft red — for favorites */
+  --color-bg: #0e0e1a; /* Deep dark blue-black background */
+  --color-surface: #16162a; /* Slightly lighter surface for cards */
+  --color-surface-2: #1e1e36; /* Even lighter for hover states */
+  --color-border: rgba(255, 255, 255, 0.07); /* Very subtle borders */
+  --color-accent: #f0a500; /* Golden amber — our main accent */
+  --color-accent-2: #e05c5c; /* Soft red — for favorites */
   --color-text-primary: #f0ede6; /* Warm white for main text */
   --color-text-secondary: #9e9bb5; /* Muted purple-grey for secondary text */
-  --color-success: #4caf88;      /* Green for success messages */
+  --color-success: #4caf88; /* Green for success messages */
 
   /* 🔤 TYPOGRAPHY (FLUID) */
   --fs-xs: clamp(0.75rem, 1vw, 0.875rem);
@@ -80,19 +82,17 @@ body {
   --radius-xl: 30px;
 
   /* 🌫 SHADOWS */
-  --shadow-sm: 0 2px 6px rgba(0,0,0,0.08);
-  --shadow-md: 0 6px 16px rgba(0,0,0,0.12);
-  --shadow-lg: 0 12px 30px rgba(0,0,0,0.18);
-
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.18);
 
   /* ⚡ TRANSITIONS */
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
 
-
   /* Font family */
-  --font-display: 'Playfair Display', serif;   /* Elegant headings */
-  --font-body: 'DM Sans', sans-serif;          /* Clean body text */
+  --font-display: "Playfair Display", serif; /* Elegant headings */
+  --font-body: "DM Sans", sans-serif; /* Clean body text */
 }
 
 /* 📦 CONTAINER */

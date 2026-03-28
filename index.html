@@ -1,35 +1,37 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/root.css" />
-    <link rel="stylesheet" href="css/header.css" />
-  </head>
-  <body>
-    <header class="app-header">
-      <div class="inner-header">
-        <div class="brand">
-          <span class="brand-icon">🧭</span>
-          <div class="brand-name">
-            <h1>Wandr</h1>
-            <p>Discover what's around you</p>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/root.css" />
+  <link rel="stylesheet" href="css/header.css" />
+</head>
+
+<body>
+  <header class="app-header">
+    <div class="inner-header">
+      <div class="brand">
+        <span class="brand-icon">🧭</span>
+        <div class="brand-name">
+          <h1>Wandr</h1>
+          <p>Discover what's around you</p>
         </div>
-        <div class="greeting">Good afternoon 🌤️ Time to explore</div>
       </div>
-    </header>
-    <main class="main-app">
-      <section class="search-container">
-        <div class="inner-search-container">
-          <span class="search-emoji">🔍</span>
-          <input type="text" placeholder="Search cafes, parks museums..." />
-          <button class="explore-btn">Explore</button>
-        </div>
-      </section>
-      <section class="filter-container">
-        
+      <div class="greeting">Good afternoon 🌤️ Time to explore</div>
+    </div>
+  </header>
+  <main class="main-app">
+    <section class="filter-container">
+      <div class="search-container">
+
+        <span class="search-emoji">🔍</span>
+        <input type="text" placeholder="Search cafes, parks museums..." />
+        <button class="explore-btn">Explore</button>
+
+      </div>
+      <div class="filter-row">
         <div class="filter-group">
           <span>Mood</span>
           <div class="mood-filter">
@@ -49,10 +51,34 @@
             <div class="budget-option filter">&#x20B9&#x20B9&#x20B9 High</div>
           </div>
         </div>
-      </section>
-      <section class=""></section>
-    </main>
+      </div>
 
-    <script src="js/script.js"></script>
-  </body>
+      <div class="location-detect"><span class="dot"></span><span>📍 Location detected — showing nearby places</span>
+      </div>
+    </section>
+    <div class="best-suggestion"><span>🌃</span>
+      <p>Evening Mode: Perfect for date night spots or rooftop view</p>
+    </div>
+    <section class="result-container">
+      <div class="result-header">
+        <h2 class="result-title">Nearby Places</h2>
+        <span class="result-count">12 places found</span>
+      </div>
+      <div class="result-grid">
+        <div class="place-card"></div>
+        <div class="place-card"></div>
+        <div class="place-card"></div>
+        <div class="place-card"></div>
+        <div class="place-card"></div>
+        <div class="place-card"></div>
+        <div class="place-card"></div>
+        <div class="place-card"></div>
+        
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+
 </html>
