@@ -25,7 +25,7 @@ select {
 
 /* 🌐 ROOT SYSTEM */
 html {
-  font-size: clamp(15px, 1.5vw, 18px);
+  font-size: clamp(12px, 1.5vw, 14px);
   scroll-behavior: smooth;
 }
 
@@ -83,7 +83,7 @@ body {
 
   /* 🌫 SHADOWS */
   --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 6px 1 rgba(0, 0, 0, 0.12);
   --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.18);
 
   /* ⚡ TRANSITIONS */
